@@ -6,5 +6,5 @@ libgl1
 libxext6
 ffmpeg
 python3-opencv
-gunicorn
+gunicorn3
 
