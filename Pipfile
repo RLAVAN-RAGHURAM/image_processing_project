@@ -13,6 +13,7 @@ jinja2 = "==2.11.2"
 markupsafe = "==1.1.1"
 opencv-python-headless = "*"
 werkzeug = "==2.0.3"
+Pillow = "==9.2.0"
 [dev-packages]
 
 [requires]
