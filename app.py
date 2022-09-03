@@ -16,6 +16,7 @@ def upload_form():
 @app.route('/', methods=['POST'])
 def upload_image():
     #write the code from here
+    print("Test")
     image_file=request.files['file']
     filename=secure_filename(image_file.filename)
     image_file.save(os.path.join('static/',filename))
