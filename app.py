@@ -17,6 +17,7 @@ def upload_form():
 def upload_image():
     #write the code from here
     image_file=request.files['file']
+    print("Test")
     filename=secure_filename(image_file.filename)
     image_file.save(os.path.join('static/',filename))
     image=Image.open(image_file)
