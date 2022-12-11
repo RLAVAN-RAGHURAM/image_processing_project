@@ -22,16 +22,9 @@ def upload_image():
     image_file.save(os.path.join('static/',filename))
     image=Image.open(image_file)
     image_flip=image.rotate(degree)
-    image_flip.save(os.path.join('static/','flip.jpg'))
-    flipped_image='flip.jpg'
-    return render_template('upload.html',filename=image_flip)
-
-
-
-
-
-
-
+    image_flip.save(os.path.join('static/','flip.png'))
+    flipped_image='flip.png'
+    return render_template('upload.html',filename=flipped_image)
 
 
 @app.route('/display/<filename>')
